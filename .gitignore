@@ -1,0 +1,6 @@
+.vs/
+**/[Dd]ebug/
+**/[Rr]elease/
+*.vcxproj.filters
+*.vcxproj.user
+conan/
