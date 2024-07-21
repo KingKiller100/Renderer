@@ -15,6 +15,12 @@ class gfxConan(ConanFile):
 
 	# Sources are located in the same place as this recipe, copy them to the recipe
 	exports_sources = "Gfx.sln", "src/*"
+	options = {
+		"api": ["opengl"]
+	}
+	default_options={
+		"api": "opengl"
+	}
 
 	def layout(self):
 		vs_layout(self)
@@ -32,7 +38,11 @@ class gfxConan(ConanFile):
 		msbuild.build("gfx.sln")
 
 	def package(self):
-		pass
+		from os.path import join
+		if self.options.api == "opengl":
+			copy(self, "opengl.lib", src=join(self.build_folder, self.settings.build_type), dst=join(self.package_folder, "lib"))
+			copy(self, "opengl.pdb", src=join(self.build_folder, self.settings.build_type), dst=join(self.package_folder, "lib"))
 
 	def package_info(self):
-		self.cpp_info.libs = ["opengl"]
+		if self.options.api == "opengl":
+			self.cpp_info.libs = ["opengl"]
