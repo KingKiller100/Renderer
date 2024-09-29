@@ -44,12 +44,14 @@
     <Import Project="$(SolutionDir)conan\conan_glfw.props" />
     <Import Project="$(SolutionDir)conan\conantoolchain.props" />
     <Import Project="$(SolutionDir)conan\conan_glad.props" />
+    <Import Project="$(SolutionDir)conan\conan_stb.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(SolutionDir)conan\conan_glfw.props" />
     <Import Project="$(SolutionDir)conan\conantoolchain.props" />
     <Import Project="$(SolutionDir)conan\conan_glad.props" />
+    <Import Project="$(SolutionDir)conan\conan_stb.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
