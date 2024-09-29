@@ -25,8 +25,12 @@ class gfxConan(ConanFile):
 	def layout(self):
 		vs_layout(self)
 
+	def configure(self):
+		self.options["glad"].gl_version = 3.3
+
 	def requirements(self):
 		self.requires("glfw/3.4@#556ce0bc9e0abc75fe4378b86e566fc4")
+		self.requires("glad/0.1.36@#c926453afdd9d5f72cc4ee6a8fff7d73")
 
 	def generate(self):
 		MSBuildDeps(self).generate()
