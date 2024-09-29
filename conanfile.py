@@ -2,7 +2,7 @@ import os
 
 from conan import ConanFile
 from conan.tools.microsoft import MSBuildToolchain, MSBuildDeps, MSBuild, vs_layout
-from conan.tools.files import copy
+from conan.tools.files import copy, collect_libs
 
 
 class gfxConan(ConanFile):
@@ -48,5 +48,4 @@ class gfxConan(ConanFile):
 			copy(self, "opengl.pdb", src=join(self.build_folder, self.settings.build_type), dst=join(self.package_folder, "lib"))
 
 	def package_info(self):
-		if self.options.api == "opengl":
-			self.cpp_info.libs = ["opengl"]
+		self.cpp_info.libs = collect_libs(self)
