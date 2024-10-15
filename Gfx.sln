@@ -4,26 +4,65 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGL", "src\OpenGL\OpenGL.vcxproj", "{4A111D95-29F5-4F28-99FC-DC23CB3B7B77}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2E57F65E-60E1-4930-97D4-2E2A61193960} = {2E57F65E-60E1-4930-97D4-2E2A61193960}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demo", "tests\Demo\Demo.vcxproj", "{A9880CA4-9592-4146-9A7B-FB2A51B4666A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "src\Core\Core.vcxproj", "{2E57F65E-60E1-4930-97D4-2E2A61193960}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{C68E9EB0-73E4-464A-AB0F-FA1253806C52}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Desktop", "tests\Desktop\Desktop.vcxproj", "{84FBC2F5-F1EB-433C-9298-8768F075E244}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4A111D95-29F5-4F28-99FC-DC23CB3B7B77}.Debug|x64.ActiveCfg = Debug|x64
 		{4A111D95-29F5-4F28-99FC-DC23CB3B7B77}.Debug|x64.Build.0 = Debug|x64
+		{4A111D95-29F5-4F28-99FC-DC23CB3B7B77}.Debug|x86.ActiveCfg = Debug|x64
+		{4A111D95-29F5-4F28-99FC-DC23CB3B7B77}.Debug|x86.Build.0 = Debug|x64
 		{4A111D95-29F5-4F28-99FC-DC23CB3B7B77}.Release|x64.ActiveCfg = Release|x64
 		{4A111D95-29F5-4F28-99FC-DC23CB3B7B77}.Release|x64.Build.0 = Release|x64
+		{4A111D95-29F5-4F28-99FC-DC23CB3B7B77}.Release|x86.ActiveCfg = Release|x64
+		{4A111D95-29F5-4F28-99FC-DC23CB3B7B77}.Release|x86.Build.0 = Release|x64
 		{A9880CA4-9592-4146-9A7B-FB2A51B4666A}.Debug|x64.ActiveCfg = Debug|x64
 		{A9880CA4-9592-4146-9A7B-FB2A51B4666A}.Debug|x64.Build.0 = Debug|x64
+		{A9880CA4-9592-4146-9A7B-FB2A51B4666A}.Debug|x86.ActiveCfg = Debug|x64
+		{A9880CA4-9592-4146-9A7B-FB2A51B4666A}.Debug|x86.Build.0 = Debug|x64
 		{A9880CA4-9592-4146-9A7B-FB2A51B4666A}.Release|x64.ActiveCfg = Release|x64
 		{A9880CA4-9592-4146-9A7B-FB2A51B4666A}.Release|x64.Build.0 = Release|x64
+		{A9880CA4-9592-4146-9A7B-FB2A51B4666A}.Release|x86.ActiveCfg = Release|x64
+		{A9880CA4-9592-4146-9A7B-FB2A51B4666A}.Release|x86.Build.0 = Release|x64
+		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Debug|x64.ActiveCfg = Debug|x64
+		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Debug|x64.Build.0 = Debug|x64
+		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Debug|x86.ActiveCfg = Debug|Win32
+		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Debug|x86.Build.0 = Debug|Win32
+		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Release|x64.ActiveCfg = Release|x64
+		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Release|x64.Build.0 = Release|x64
+		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Release|x86.ActiveCfg = Release|Win32
+		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Release|x86.Build.0 = Release|Win32
+		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Debug|x64.ActiveCfg = Debug|x64
+		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Debug|x64.Build.0 = Debug|x64
+		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Debug|x86.ActiveCfg = Debug|Win32
+		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Debug|x86.Build.0 = Debug|Win32
+		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Release|x64.ActiveCfg = Release|x64
+		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Release|x64.Build.0 = Release|x64
+		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Release|x86.ActiveCfg = Release|Win32
+		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A9880CA4-9592-4146-9A7B-FB2A51B4666A} = {C68E9EB0-73E4-464A-AB0F-FA1253806C52}
+		{84FBC2F5-F1EB-433C-9298-8768F075E244} = {C68E9EB0-73E4-464A-AB0F-FA1253806C52}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BA8B55F-AC52-48AD-A0AC-FF09272FF204}
