@@ -1,19 +1,19 @@
-#pragma once
-import Core.Maths;
-import <string>;
-import <utility>;
-import <memory>;
+export module Gfx:GfxDevice;
+
+import std.compat;
+import Maths;
 
 export namespace Gfx
-{	
+{
 	class iCanvas
 	{
 	public:
 		struct Options
 		{
 			std::string_view Title;
-			Maths::Vector<std::uint32_t,2> Position;
-			Maths::Vector<std::uint32_t, 2> Size;
+			std::string_view Name;
+			Maths::Vector2<std::uint32_t> Position;
+			Maths::Vector2<std::uint32_t> Size;
 		};
 
 		virtual ~iCanvas() = default;

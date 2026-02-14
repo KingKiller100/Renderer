@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.10.35027.167
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11505.172 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGL", "src\OpenGL\OpenGL.vcxproj", "{4A111D95-29F5-4F28-99FC-DC23CB3B7B77}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -13,8 +13,6 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "src\Core\Core.vcxproj", "{2E57F65E-60E1-4930-97D4-2E2A61193960}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{C68E9EB0-73E4-464A-AB0F-FA1253806C52}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Desktop", "tests\Desktop\Desktop.vcxproj", "{84FBC2F5-F1EB-433C-9298-8768F075E244}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Maths", "src\Maths\Maths.vcxproj", "{531F01A9-0F5C-40AB-976B-F90C1C081F23}"
 EndProject
@@ -36,10 +34,6 @@ Global
 		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Debug|x64.Build.0 = Debug|x64
 		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Release|x64.ActiveCfg = Release|x64
 		{2E57F65E-60E1-4930-97D4-2E2A61193960}.Release|x64.Build.0 = Release|x64
-		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Debug|x64.ActiveCfg = Debug|x64
-		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Debug|x64.Build.0 = Debug|x64
-		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Release|x64.ActiveCfg = Release|x64
-		{84FBC2F5-F1EB-433C-9298-8768F075E244}.Release|x64.Build.0 = Release|x64
 		{531F01A9-0F5C-40AB-976B-F90C1C081F23}.Debug|x64.ActiveCfg = Debug|x64
 		{531F01A9-0F5C-40AB-976B-F90C1C081F23}.Debug|x64.Build.0 = Debug|x64
 		{531F01A9-0F5C-40AB-976B-F90C1C081F23}.Release|x64.ActiveCfg = Release|x64
@@ -50,7 +44,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A9880CA4-9592-4146-9A7B-FB2A51B4666A} = {C68E9EB0-73E4-464A-AB0F-FA1253806C52}
-		{84FBC2F5-F1EB-433C-9298-8768F075E244} = {C68E9EB0-73E4-464A-AB0F-FA1253806C52}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BA8B55F-AC52-48AD-A0AC-FF09272FF204}

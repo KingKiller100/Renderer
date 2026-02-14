@@ -1,7 +1,7 @@
-export import Demo;
+export module Demo;
 
-import Core;
-import <memory>;
+import Gfx;
+import std.compat;
 
 class Demo
 {

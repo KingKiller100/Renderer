@@ -1,11 +1,13 @@
 module;
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
 export module Gfx:OpenGl;
-import Core;
+import :GfxDevice;
+import <glad/gl.h>;
+import <GLFW/glfw3.h>;
 import <memory>;
 import <vector>;
 import <unordered_map>;
+
+
 
 namespace Gfx
 {
