@@ -1,7 +1,12 @@
 .vs/
+.zed/
+.vscode/
 **/[Dd]ebug/
 **/[Rr]elease/
 *.vcxproj.filters
 *.vcxproj.user
 conan/
+bin/
+target/
+tmp/
 tests/**/Target/

@@ -30,8 +30,8 @@ class gfxConan(ConanFile):
 
 	def requirements(self):
 		if self.options.api == "opengl":
-			self.requires("glfw/3.4@#556ce0bc9e0abc75fe4378b86e566fc4")
-			self.requires("glad/0.1.36@#c926453afdd9d5f72cc4ee6a8fff7d73")
+			self.requires("glfw/3.4@#41cc24c744dc4c80571f5dd10dcd9cda")
+			self.requires("glad/2.0.8@#a296ca44353184764ba2d698034b9d94")
 		self.requires("stb/cci.20240531@#ede183dce303916dab0c1b835df3926a")
 		# self.requires("freetype/2.13.2@#7934d59c447d72edcd56025dc60e1aeb")
 

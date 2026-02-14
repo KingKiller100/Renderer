@@ -1,11 +1,11 @@
-﻿export module Core.Maths:Vector;
+﻿export module Maths:Vector;
 import <utility>;
 import <stdexcept>;
 import <algorithm>;
 
-export namespace Maths
+namespace Maths
 {
-	template<typename T, size_t N>
+	export template<typename T, size_t N>
 	struct Vector
 	{
 	public:
@@ -304,5 +304,4 @@ export namespace Maths
 	private:
 		Type Dimensions[N]{};
 	};
-
 }

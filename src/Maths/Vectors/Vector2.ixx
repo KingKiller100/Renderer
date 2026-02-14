@@ -1,12 +1,15 @@
-export module Core.Maths:Vector2;
+export module Maths:Vector2;
 import :Vector;
 import <utility>;
 import <stdexcept>;
 import <algorithm>;
 
+#pragma warning(push)
+#pragma warning(disable: 4201)
+
 namespace Maths
 {
-	template<typename T>
+	export template<typename T>
 	struct Vector<T, 2>
 	{
 	public:
@@ -283,12 +286,16 @@ namespace Maths
 	public:
 		union
 		{
-			Type X: 0;
-			Type Y: sizeof(Type);
+			struct
+			{
+				Type X, Y;
+			};
 			Type Dimensions[2];
 		};
 	};
 
-	template<typename T>
+	export template<typename T>
 	using Vector2 = Vector<T, 2>;
 }
+
+#pragma warning(pop)
